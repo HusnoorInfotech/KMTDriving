@@ -27,7 +27,7 @@ const AngularParking: React.FC = () => {
         {/* Image */}
         <div className="rounded-xl overflow-hidden shadow-md mb-8">
           <img
-            src="angular.jpg"
+            src="src/assets/images/angular.jpg"
             alt="Angular Parking Overview"
             className="w-full object-cover"
           />

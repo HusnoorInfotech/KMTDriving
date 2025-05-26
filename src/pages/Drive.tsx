@@ -44,7 +44,7 @@ const Drive: React.FC = () => {
         {/* Image */}
         <div className="flex justify-center mb-8">
           <img
-            src="/images/better-driving.png"
+            src="src/assets/images/better-driving.jpg"
             alt="Better Driving Tips"
             className="rounded-2xl shadow-lg w-full max-h-96 object-cover"
           />

@@ -16,79 +16,79 @@ const Syllabus: React.FC = () => {
       description:
         "If you get sweaty palms just thinking about parallel parking, trust us, you are not the only one. Master parallel parking easily.",
       link: "/ParallelParking",
-      image: "parallelparking.jpg",
+      image: "src/assets/images/parallelparking.jpg",
     },
     {
       title: "Everything You Need To Know About Perpendicular Parking",
       description:
         "If you get sweaty palms just thinking about parallel parking, trust us, you are not the only one. Master parallel parking easily.",
       link: "/PerpendicularParking",
-      image: "perpendicularparking.png",
+      image: "src/assets/images/perpendicularparking.png",
     },
     {
       title: "Everything You Need To Know About Angular Parking",
       description:
         "If you get sweaty palms just thinking about parallel parking, trust us, you are not the only one. Master parallel parking easily.",
       link: "/AngularParking",
-      image: "angular.jpg",
+      image: "src/assets/images/angular.jpg",
     },
     {
       title: "10 Practices That Make You a Safer Driver",
       description:
         "Although the 2020 lockdown resulted in a 49.47% fall in the number of lives lost in road accidents, safe driving habits matter.",
       link: "/SaferDrivingPractices",
-      image: "drive1.png",
+      image: "src/assets/images/drive1.png",
     },
     {
       title: "5 Car Driving Tips That Make You a Better Driver",
       description:
         "There’s no age for learning, and the scope of learning is infinite. When it comes to driving, follow these 5 expert tips.",
       link: "/Drive",
-      image: "/drive2.jpg",
+      image: "src/assets/images/drive2.jpg",
     },
     {
       title: "Top 10 Road Safety Tips You Should Know",
       description:
         "Safety must come first on your list when driving, be it for yourself and the passengers, pedestrians, or other drivers.",
       link: "/RoadSafetyTips",
-      image: "drive5.jpg",
+      image: "src/assets/images/drive5.jpg",
     },
   ];
 
   const roadSigns = [
-    { title: "Right Curve", image: "rightcurve.jpg" },
-    { title: "Left Curve", image: "leftcurve.jpg" },
-    { title: "Pedistrain Crossing", image: "pedistraincrossing.jpg" },
-    { title: "Crossroads Road", image: "crossroad.jpg" },
-    { title: "Speed Limit", image: "speedlimit.png" },
-    { title: "Road Narrow", image: "roadnarrow.png" },
+    { title: "Right Curve", image: "src/assets/images/rightcurve.jpg" },
+    { title: "Left Curve", image: "src/assets/images/leftcurve.jpg" },
+    { title: "Pedistrain Crossing", image: "src/assets/images/pedistraincrossing.jpg" },
+    { title: "Crossroads Road", image: "src/assets/images/crossroad.jpg" },
+    { title: "Speed Limit", image: "src/assets/images/speedlimit.png" },
+    { title: "Road Narrow", image: "src/assets/images/roadnarrow.png" },
   ];
 
   const licenseProcess = [
     {
       title: "Step 1: Apply for a Learner's Permit",
       description: "Submit the required documents and fees to get your learner's permit.",
-      image: "drive5.jpg",
+      image: "src/assets/images/drive5.jpg",
     },
     {
       title: "Step 2: Complete Driver Training",
       description: "Enroll in a certified driving school and complete your training hours.",
-      image: "drive5.jpg",
+      image: "src/assets/images/drive5.jpg",
     },
     {
       title: "Step 3: Schedule a Driving Test",
       description: "Book your driving test appointment with the local transport authority.",
-      image: "drive5.jpg",
+      image: "src/assets/images/drive5.jpg",
     },
     {
       title: "Step 4: Pass the Driving Test",
       description: "Demonstrate your driving skills to get approval for your license.",
-      image: "drive5.jpg",
+      image: "src/assets/images/drive5.jpg",
     },
     {
       title: "Step 5: Receive Your Driving License",
       description: "Once you pass, your license will be issued. Drive responsibly!",
-      image: "drive5.jpg",
+      image: "src/assets/images/drive5.jpg",
     },
   ];
 

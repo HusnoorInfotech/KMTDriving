@@ -12,7 +12,7 @@ const ParallelParking: React.FC = () => {
         "Ensure it's a legal parking zone.",
         "Check your mirrors for pedestrians, cyclists, and vehicles.",
       ],
-      img: "parallel1.png",
+      img: "src/assets/images/parallel1.png",
     },
     {
       step: "Step 2: Align Your Car",
@@ -21,7 +21,7 @@ const ParallelParking: React.FC = () => {
         "Maintain about 2-3 feet of distance.",
         "Check surroundings before proceeding.",
       ],
-      img: "parallel1.png",
+      img: "src/assets/images/parallel1.png",
     },
     {
       step: "Step 3: Start Reversing",
@@ -30,7 +30,7 @@ const ParallelParking: React.FC = () => {
         "Reverse until your back right wheel aligns with the other car’s rear bumper.",
         "Keep checking mirrors and blind spots.",
       ],
-      img: "parallel34.png",
+      img: "src/assets/images/parallel34.png",
     },
     {
       step: "Step 4: Straighten the Wheels",
@@ -39,7 +39,7 @@ const ParallelParking: React.FC = () => {
         "Continue reversing straight into the space.",
         "Avoid hitting the curb or the rear car.",
       ],
-      img: "parallel34.png",
+      img: "src/assets/images/parallel34.png",
     },
     {
       step: "Step 5: Final Adjustment",
@@ -48,7 +48,7 @@ const ParallelParking: React.FC = () => {
         "Move forward/back to center your car evenly.",
         "Ensure the vehicle is straight and centered.",
       ],
-      img: "parallel56.png",
+      img: "src/assets/images/parallel56.png",
     },
     {
       step: "Step 6: Center Your Car",
@@ -57,7 +57,7 @@ const ParallelParking: React.FC = () => {
         "Engage the parking brake.",
         "Exit only when safe.",
       ],
-      img: "parallel56.png",
+      img: "src/assets/images/parallel56.png",
     },
   ];
 
@@ -78,7 +78,7 @@ const ParallelParking: React.FC = () => {
         {/* Top Image */}
         <div className="flex justify-center mb-16">
           <img
-            src="parallelparking.jpg"
+            src="src/assets/images/parallelparking.jpg"
             alt="Parallel Parking Overview"
             className="rounded-xl shadow-sm w-full max-h-[450px] object-cover"
           />

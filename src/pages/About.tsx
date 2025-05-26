@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Award } from "lucide-react";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
@@ -104,7 +104,7 @@ const AboutUs = () => {
       {/* Image Section */}
       <div className="w-full md:w-1/2">
         <img 
-          src="car4.jpg" 
+          src="src/assets/images/car4.jpg" 
           alt="Professional" 
           className="rounded-lg shadow-lg w-full h-auto"
         />
@@ -135,7 +135,7 @@ const AboutUs = () => {
       {/* Image Section */}
       <div className="w-full md:w-1/2">
         <img 
-          src="car4.jpg" 
+          src="src/assets/images/car4.jpg" 
           alt="Professional" 
           className="rounded-lg shadow-lg w-full h-auto"
         />

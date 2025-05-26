@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { Calendar, Award, Car, Clock, Shield, BookOpen } from "lucide-react";
-import { motion } from "framer-motion"; // Import motion from framer-motion
-import { useRef } from "react";
+import { useState } from "react";
+// import { useNavigate } from "react-router-dom";
+// import { Calendar, Award, Car, Clock, Shield, BookOpen } from "lucide-react";
+// import { motion } from "framer-motion"; // Import motion from framer-motion
+// import { useRef } from "react";
 import BookingForm from "./book";
 import RecommendationModal from "../pages/RecommendationModal";
 
@@ -30,7 +30,7 @@ const courses: Course[] = [
     simulator: 5,
     theory: 4,
     recommended: true,
-    image: "drive1.png",
+    image: "src/assets/images/drive1.png",
     category: "Beginner",
     duration: "20 Days",
     fee: "₹4,500",
@@ -43,7 +43,7 @@ const courses: Course[] = [
     simulator: 2,
     theory: 2,
     recommended: true,
-    image: "drive2.jpg",
+    image: "src/assets/images/drive2.jpg",
     category: "Advanced",
     duration: "10 Days",
     fee: "₹2,000",
@@ -55,7 +55,7 @@ const courses: Course[] = [
       "Prepares you for the transport license test by covering heavy vehicle handling, route planning, and passenger safety.",
     practical: 10,
     theory: 5,
-    image: "drive1.png",
+    image: "src/assets/images/drive1.png",
     category: "Transport",
     duration: "10-15 Days",
     fee: "₹5,500 - ₹10,000",
@@ -64,46 +64,48 @@ const courses: Course[] = [
 
 
 export default function Courses() {
-  const navigate = useNavigate(); // Initialize the useNavigate hook
-  const [selectedCourse, setSelectedCourse] = useState<any | null>(null); // To store selected course details
-  const [isModalOpen, setIsModalOpen] = useState(false); // Track modal visibility
+  // const navigate = useNavigate(); // Initialize the useNavigate hook
+  // const [selectedCourse, setSelectedCourse] = useState<any | null>(null); // To store selected course details
+  // const [isModalOpen, setIsModalOpen] = useState(false); // Track modal visibility
 
   //const handleCourseClick = (course: any) => {
   //setSelectedCourse(course); // Set the selected course on click
 //setIsModalOpen(true); // Open the modal
   //};
 
-  const closeModal = () => {
-    setIsModalOpen(false); // Close the modal
-    setSelectedCourse(null); // Reset selected course
-  };
+  // const closeModal = () => {
+    // setIsModalOpen(false); // Close the modal
+    // setSelectedCourse(null); // Reset selected course
+  // };
 
-  const handleEnrollClick = () => {
-    navigate("/enroll"); // Navigate to the enrollment page
-    setIsModalOpen(false); // Close the modal
-  };
-
+  // const handleEnrollClick = () => {
+    // navigate("/enroll"); // Navigate to the enrollment page
+    // setIsModalOpen(false); // Close the modal
+  // };
+/*
   const handleCourseSelection = (course: any) => {
     console.log("Selected course:", course);
     setSelectedCourse(course); // Ensure setSelectedCourse is defined
   };
+  */
   
-
+/*
   const handleScrollToSection = (sectionRef: React.RefObject<HTMLDivElement>) => {
     if (sectionRef.current) {
       sectionRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
-
+*/ /*
   const handleCourseClick = (course: any) => {
     console.log("Course clicked:", course);
     setSelectedCourse(course);
-  };
+  };*/
 
 
-  const carsRef = useRef<HTMLDivElement>(null);
-  const licenseRef = useRef<HTMLDivElement>(null);
-  const transportLicenseRef = useRef<HTMLDivElement>(null);
+
+  // const carsRef = useRef<HTMLDivElement>(null);
+  // const licenseRef = useRef<HTMLDivElement>(null);
+  // const transportLicenseRef = useRef<HTMLDivElement>(null);
 
   const categories = ["Beginner", "Advanced", "Transport"];
 

@@ -59,7 +59,7 @@ const PerpendicularParking: React.FC = () => {
         {/* Hero Image */}
         <div className="flex justify-center">
           <img
-            src="perpendicularparking.png"
+            src="src/assets/images/perpendicularparking.png"
             alt="Perpendicular Parking Overview"
             className="rounded-xl shadow-lg w-full max-h-[400px] object-cover"
           />

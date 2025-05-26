@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Car, User } from "lucide-react";
+import { Car } from "lucide-react";
 
 // Define the type for the props, ensuring user is an optional prop
-interface NavbarProps {
-  user: any; // You can replace `any` with a more specific type from Firebase, like `User | null`
-}
+// interface NavbarProps {
+  // user: any; // You can replace `any` with a more specific type from Firebase, like `User | null`
+// }
 
-const Navbar: React.FC<NavbarProps> = ({ user }) => {
+const Navbar: React.FC = () => {
   return (
     <nav className="bg-[#F8FAFC] border-t-2 border-white shadow-lg fixed w-full z-20">
       <div className="container mx-auto px-4 py-3">

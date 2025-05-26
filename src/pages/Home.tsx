@@ -8,7 +8,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import BookingForm from "./book";
-
 import { Link } from "react-router-dom";
 
 // Add this CSS in a separate file (e.g., src/styles/Home.css) or in a <style> tag
@@ -45,12 +44,12 @@ const Home: React.FC = () => {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
 
   const roadSigns = [
-    { title: "Pedestrian Crossing", image: "../../pedistraincrossing.jpg"},
-    { title: "Roundabout Ahead", image: "../../roundabout.jpg"},
-    { title: "Slippery Road", image: "../../slipperyroad.jpg"},
-    { title: "Speed Limit 50", image: "../../speedlimit.png"},
-    { title: "No U-Turn", image: "../../nouturn.jpg"},
-    { title: "Men At Work", image: "../../work.png"},
+    { title: "Pedestrian Crossing", image: "src/assets/images/pedistraincrossing.jpg"},
+    { title: "Roundabout Ahead", image: "src/assets/images/roundabout.jpg"},
+    { title: "Slippery Road", image: "src/assets/images/slipperyroad.jpg"},
+    { title: "Speed Limit 50", image: "src/assets/images/speedlimit.png"},
+    { title: "No U-Turn", image: "src/assets/images/nouturn.jpg"},
+    { title: "Men At Work", image: "src/assets/images/work.png"},
   ];
   console.log(roadSigns);
   if (showSplash) {
@@ -71,7 +70,7 @@ const Home: React.FC = () => {
 
         {/* Video */}
         <motion.video
-          src="/animationcar.webm"
+          src="src/assets/images/animationcar.webm"
           autoPlay
           muted
           loop
@@ -135,21 +134,21 @@ const Home: React.FC = () => {
         >
           <SwiperSlide>
             <img
-              src="/collage.jpg"
+              src="src/assets/images/collage.jpg"
               alt="Driving Lesson 1"
               className="w-full h-[300px] object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="/carcollage.jpg"
+              src="src/assets/images/carcollage.jpg"
               alt="Driving Lesson 2"
               className="w-full h-[300px] object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="/drive.png"
+              src="src/assets/images/drive.png"
               alt="Driving Lesson 1"
               className="w-full h-[300px] object-cover"
             />
@@ -244,7 +243,7 @@ const Home: React.FC = () => {
             <h2 className="text-2xl font-bold text-[#182978] mb-4">Learner Standard Track Course(Comprehensive Training)</h2>
             <p className="text-gray-700">
               If you've never been behind the steering wheel, this course is for you. At the end of 20 days,
-              you'll know the basic traffic rules and gain a hands-on driving experience through...
+              you'll know the basic traffic rules and gain a hands-on driving experience throughsrc.
             </p>
             <div className="mt-4 space-y-4">
               <div className="p-4 bg-white border rounded-lg shadow-sm">
@@ -275,7 +274,7 @@ const Home: React.FC = () => {
             <h2 className="text-2xl font-bold text-[#182978] mb-4">Learner Extended Track Course(Basic Training)</h2>
             <p className="text-gray-700">
               If you've never been behind the steering wheel, this course is for you. At the end of 10 days,
-              you'll know the basic traffic rules and gain a hands-on driving experience through...
+              you'll know the basic traffic rules and gain a hands-on driving experience throughsrc.
             </p>
             <div className="mt-4 space-y-4">
               <div className="p-4 bg-white border rounded-lg shadow-sm">
@@ -300,7 +299,6 @@ const Home: React.FC = () => {
       {/* Google Map Locator */}
       <section className="w-full py-10">
         <h2 className="text-3xl font-bold text-center mb-6">Find Us Here</h2>
-        <p>Branch</p>
         <div className="w-full h-[400px]">
           <iframe
             className="w-full h-full rounded-lg shadow-lg"

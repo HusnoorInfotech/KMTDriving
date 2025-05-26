@@ -138,7 +138,7 @@ const mockTests: Question[][] = [
         <div className="text-center text-blue-800 font-serif font-bold tracking-wide pl-8 md:pl-8 mb-8">KANDIVALI MOTOR TRAINING SCHOOL</div>
         <div className="flex items-center justify-between mb-4 mt-2">
           <video
-            src="animationcar1.webm" // Replace with your .webm file URL
+            src="src/assets/images/animationcar1.webm" // Replace with your .webm file URL
             autoPlay
             loop
             muted

@@ -58,27 +58,27 @@ const Roadmap: React.FC = () => {
     {
       title: "Step 1: Apply for a Learner's Permit",
       description: "Submit the required documents and fees to get your learner's permit.",
-      image: "drive5.jpg",
+      image: "src/assets/images/drive5.jpg",
     },
     {
       title: "Step 2: Complete Driver Training",
       description: "Enroll in a certified driving school and complete your training hours.",
-      image: "drive5.jpg",
+      image: "src/assets/images/drive5.jpg",
     },
     {
       title: "Step 3: Schedule a Driving Test",
       description: "Book your driving test appointment with the local transport authority.",
-      image: "drive5.jpg",
+      image: "src/assets/images/drive5.jpg",
     },
     {
       title: "Step 4: Pass the Driving Test",
       description: "Demonstrate your driving skills to get approval for your license.",
-      image: "drive5.jpg",
+      image: "src/assets/images/drive5.jpg",
     },
     {
       title: "Step 5: Receive Your Driving License",
       description: "Once you pass, your license will be issued. Drive responsibly!",
-      image: "drive5.jpg",
+      image: "src/assets/images/drive5.jpg",
     },
   ];
 
