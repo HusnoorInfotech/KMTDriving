@@ -31,7 +31,9 @@ const styles = `
     animation: progress 3.5s linear forwards;
   }
 `;
+const responsive = `
 
+`
 const Home: React.FC = () => {
   const [showSplash, setShowSplash] = useState(true);
   const navigate = useNavigate();
@@ -388,35 +390,86 @@ const Home: React.FC = () => {
       </div>
 
       {/* Register Your Interest Button - Fixed Left */}
-      <div>
-        <button
-          className="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-[#182978] text-white px-6 py-3 rounded-lg text-lg font-medium shadow-lg cursor-pointer"
-          onClick={() => setIsBookingOpen(true)}
-        >
-          Register Your Interest +
-        </button>
-
+      {/* <div> */}
+      {/* <div> */}
+        {/* <button */}
+          {/* // className="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-[#182978] text-white px-6 py-3 rounded-lg text-lg font-medium shadow-lg cursor-pointer" */}
+          {/* className="fixed bottom-16 left-1/2 transform -translate-x-1/2 bg-[#182978] text-white px-6 py-3 rounded-lg text-lg font-medium shadow-lg cursor-pointer z-50" */}
+          {/* onClick={() => setIsBookingOpen(true)} */}
+          {/* > */}
+          {/* Register Your Interest + */}
+        {/* </button> */}
         {/* BookingForm Modal */}
-        <BookingForm isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
-      </div>
-      
+        {/* <BookingForm isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} /> */}
+      {/* </div> */}
+       
       {/* WhatsApp */}
-      <Link to='https://wa.me/7021340259'>
-      <button
-        className="fixed bottom-6 left-6 bg-[#25d366] text-white px-5 py-3 rounded-lg shadow-xl hover:bg-[#075e54] transition duration-300 flex items-center backdrop-blur-md bg-opacity-85 hover:scale-[1.05]"
-      >
-        <MessageCircle/>
-      </button>
-      </Link>
+      {/* <Link to='https://wa.me/7021340259'> */}
+      {/* <button */}
+        {/* className="fixed bottom-6 left-6 bg-[#25d366] text-white px-5 py-3 rounded-lg shadow-xl hover:bg-[#075e54] transition duration-300 flex items-center backdrop-blur-md bg-opacity-85 hover:scale-[1.05]" */}
+      {/* //   className="fixed bottom-6 left-6 bg-[#25d366] right-6 flex flex-col space-y-3  */}
+      {/* // sm:flex-row sm:space-x-4 sm:space-y-0  */}
+      {/* // sm:bottom-6 sm:left-6 sm:right-auto  */}
+      {/* // sm:justify-start  */}
+      {/* // xs:bottom-6 xs:left-1/2 xs:right-auto xs:transform xs:-translate-x-1/2 */}
+      {/* // z-50" */}
+        {/* > */}
+        {/* <MessageCircle/> */}
+      {/* </button> */}
+      {/* </Link> */}
       {/* Reviews and Ratings Button */}
+      {/* <button */}
+        {/* className="fixed bottom-6 right-6 bg-[#4A5D85] text-white px-5 py-3 rounded-lg shadow-xl hover:bg-[#3F5273] transition duration-300 flex items-center backdrop-blur-md bg-opacity-85 hover:scale-[1.05]" */}
+        {/* onClick={() => navigate("/reviews")} */}
+        {/* > */}
+        {/* <Star className="mr-2 h-6 w-6" /> */}
+        {/* <span className="text-lg font-semibold">Reviews & Ratings</span> */}
+      {/* </button> */}
+    {/* </div> */}
+    <div>
+  {/* Register Interest Button */}
+  <button
+    className="fixed bottom-16 left-1/2 transform -translate-x-1/2 bg-[#182978] text-white px-6 py-3 rounded-lg text-lg font-medium shadow-lg cursor-pointer z-50"
+    onClick={() => setIsBookingOpen(true)}
+  >
+    Register Your Interest +
+  </button>
+
+  {/* BookingForm Modal */}
+  <BookingForm isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
+
+  {/* Container for WhatsApp and Reviews buttons */}
+  <div
+    className="
+      fixed bottom-6 left-6 right-6 flex flex-col space-y-6 
+      sm:flex-row sm:space-x-4 sm:space-y-0 
+      sm:bottom-6 sm:left-6 sm:right-auto 
+      sm:justify-start 
+      xs:bottom-6 xs:left-1/2 xs:right-auto xs:transform xs:-translate-x-1/2
+      z-50
+    "
+  >
+    {/* WhatsApp Button */}
+    <Link to="https://wa.me/7021340259" className="sm:mr-0 xs:mr-0">
       <button
-        className="fixed bottom-6 right-6 bg-[#4A5D85] text-white px-5 py-3 rounded-lg shadow-xl hover:bg-[#3F5273] transition duration-300 flex items-center backdrop-blur-md bg-opacity-85 hover:scale-[1.05]"
-        onClick={() => navigate("/reviews")}
+        className="bg-[#25d366] text-white px-5 py-3 rounded-lg shadow-xl hover:bg-[#075e54] transition duration-300 flex items-center backdrop-blur-md bg-opacity-85 hover:scale-[1.05] w-full-0 sm:w-auto"
       >
-        <Star className="mr-2 h-6 w-6" />
-        <span className="text-lg font-semibold">Reviews & Ratings</span>
+        <MessageCircle />
       </button>
-    </div>
+    </Link>
+
+    {/* Reviews and Ratings Button */}
+    <button
+      className="bg-[#4A5D85] text-white px-5 py-3 rounded-lg shadow-xl hover:bg-[#3F5273] transition duration-300 flex items-center backdrop-blur-md bg-opacity-85 hover:scale-[1.05] w-full-0 sm:w-auto"
+      onClick={() => navigate("/reviews")}
+    >
+      <Star className="mr-2 h-6 w-6" />
+      <span className="text-lg font-semibold">Reviews & Ratings</span>
+    </button>
+  </div>
+</div>
+
+        </div>
   );
 };
 
