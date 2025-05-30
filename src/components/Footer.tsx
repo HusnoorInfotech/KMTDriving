@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Car, Facebook, Instagram, Twitter } from 'lucide-react';
+import { Car, Facebook, Instagram, Twitter} from 'lucide-react';
 
 export default function Footer() {
   return (

@@ -18,6 +18,7 @@ import carcollege from "../assets/images/carcollage.jpg";
 import drive from "../assets/images/drive.png";
 import animationcar from "../assets/images/animationcar.webm";
 import BookingForm from "./book";
+import { MessageCircle } from 'lucide-react'
 import { Link } from "react-router-dom";
 
 // Add this CSS in a separate file (e.g., src/styles/Home.css) or in a <style> tag
@@ -398,7 +399,15 @@ const Home: React.FC = () => {
         {/* BookingForm Modal */}
         <BookingForm isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
       </div>
-
+      
+      {/* WhatsApp */}
+      <Link to='https://wa.me/7021340259'>
+      <button
+        className="fixed bottom-6 left-6 bg-[#25d366] text-white px-5 py-3 rounded-lg shadow-xl hover:bg-[#075e54] transition duration-300 flex items-center backdrop-blur-md bg-opacity-85 hover:scale-[1.05]"
+      >
+        <MessageCircle/>
+      </button>
+      </Link>
       {/* Reviews and Ratings Button */}
       <button
         className="fixed bottom-6 right-6 bg-[#4A5D85] text-white px-5 py-3 rounded-lg shadow-xl hover:bg-[#3F5273] transition duration-300 flex items-center backdrop-blur-md bg-opacity-85 hover:scale-[1.05]"

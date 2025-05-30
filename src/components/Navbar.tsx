@@ -8,6 +8,7 @@ import { Car } from "lucide-react";
 // }
 
 const Navbar: React.FC = () => {
+  const user = true;
   return (
     <nav className="bg-[#F8FAFC] border-t-2 border-white shadow-lg fixed w-full z-20">
       <div className="container mx-auto px-4 py-3">
@@ -16,7 +17,7 @@ const Navbar: React.FC = () => {
           <Link to="/" className="flex items-center">
             <Car className="h-8 w-8 text-[#001730]" />
             <span className="ml-5 text-xl font-serif bold text-[#001730]">
-              KMTraining School
+              Kandivali Motor Training School
             </span>
           </Link>
 
@@ -35,16 +36,17 @@ const Navbar: React.FC = () => {
           {/* <div className="flex items-center space-x-6"> */}
             {/* Profile Icon */}
             {/* {user ? ( */}
-              {/* <Link to="/profile" className="text-[#001730] hover:text-blue-600 flex items-center space-x-2"> */}
-                {/* <User className="h-6 w-6" /> */}
-                {/* <span className="hidden md:inline">Profile</span> */}
-              {/* </Link> */}
-            {/* ) : ( */}
-              {/* <Link to="/login" className="text-[#001730] hover:text-blue-600 flex items-center space-x-2"> */}
-                {/* <User className="h-6 w-6" /> */}
-                {/* <span className="hidden md:inline">Login</span> */}
-              {/* </Link> */}
-            {/* )} */}
+              {/* // <Link to="/profile" className="text-[#001730] hover:text-blue-600 flex items-center space-x-2">  */}
+                 {/* <User className="h-6 w-6" />  */}
+                {/* <span className="hidden md:inline">Profile</span>  */}
+               {/* </Link>  */}
+            {/* //  ) : (  */}
+              {/* //  <Link to="/login" className="text-[#001730] hover:text-blue-600 flex items-center space-x-2">  */}
+                 {/* <User className="h-6 w-6" />  */}
+                 {/* <span className="hidden md:inline">Login</span> */}
+               {/* </Link>  */}
+            {/* //  )}  */}
+            
           {/* </div> */}
           
         </div>

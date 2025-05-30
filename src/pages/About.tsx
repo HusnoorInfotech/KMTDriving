@@ -260,7 +260,7 @@ const AboutUs = () => {
         <a href="#" className="text-red-600 text-4xl hover:text-red-400">
           <FaTwitter />
         </a>
-        <a href="#" className="text-red-600 text-4xl hover:text-red-400">
+        <a href="https://www.instagram.com/kandivalimotortraining" className="text-red-600 text-4xl hover:text-red-400">
           <FaInstagram />
         </a>
       </div>

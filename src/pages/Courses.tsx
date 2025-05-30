@@ -17,7 +17,7 @@ interface Course {
   simulator?: number;
   theory: number;
   recommended?: boolean;
-  image:any;
+  image:string;
   category: string;
   duration: string;
   fee: string;
@@ -32,7 +32,7 @@ const courses: Course[] = [
     simulator: 5,
     theory: 4,
     recommended: true,
-    image: {drive1},
+    image: drive1,
     category: "Beginner",
     duration: "20 Days",
     fee: "₹4,500",
@@ -45,7 +45,7 @@ const courses: Course[] = [
     simulator: 2,
     theory: 2,
     recommended: true,
-    image: {drive2},
+    image: drive2,
     category: "Advanced",
     duration: "10 Days",
     fee: "₹2,000",
@@ -57,7 +57,7 @@ const courses: Course[] = [
       "Prepares you for the transport license test by covering heavy vehicle handling, route planning, and passenger safety.",
     practical: 10,
     theory: 5,
-    image: {drive1},
+    image: drive1,
     category: "Transport",
     duration: "10-15 Days",
     fee: "₹5,500 - ₹10,000",
