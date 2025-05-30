@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import swift2 from "../assets/images/swift2.jpg";
+import swift from "../assets/images/swift.jpg";
+import hondacity from "../assets/images/hondacity.jpg";
 interface CarOption {
   name: string;
   feeFull: number;
@@ -15,21 +17,21 @@ const carOptions: CarOption[] = [
     feeFull: 4000,
     duration: "20 Days (Beginner Course)",
     description: "Ideal for beginners looking to master city driving. Learn gear shifting, braking control, and basic traffic rules. Special focus on parking, reversing, and night driving.",
-    image: "src/assets/images/swift2.jpg",
+    image: swift2,
   },
   {
     name: "SWIFT",
     feeFull: 4300,
     duration: "20 Days (Beginner Course)",
     description: "A smooth and compact car perfect for learning. Covers highway driving, lane discipline, defensive driving techniques, and emergency braking.",
-    image: "src/assets/images/swift.jpg",
+    image: swift,
   },
   {
     name: "HONDA CITY",
     feeFull: 4500,
     duration: "20 Days (Beginner Course)",
     description: "Best for those aiming for advanced control. Covers high-speed driving, roundabouts, U-turns, and intersection handling.",
-    image: "src/assets/images/hondacity.jpg",
+    image: hondacity,
   },
 ];
 

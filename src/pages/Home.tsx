@@ -7,6 +7,16 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import pedistraincrossing from "../assets/images/pedistraincrossing.jpg";
+import roundabout from "../assets/images/roundabout.jpg";
+import slipperyroad from "../assets/images/slipperyroad.jpg";
+import speedlimit from "../assets/images/speedlimit.png";
+import nouturn from "../assets/images/nouturn.jpg";
+import work from "../assets/images/work.png";
+import collage from "../assets/images/collage.jpg";
+import carcollege from "../assets/images/carcollage.jpg";
+import drive from "../assets/images/drive.png";
+import animationcar from "../assets/images/animationcar.webm";
 import BookingForm from "./book";
 import { Link } from "react-router-dom";
 
@@ -44,12 +54,12 @@ const Home: React.FC = () => {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
 
   const roadSigns = [
-    { title: "Pedestrian Crossing", image: "src/assets/images/pedistraincrossing.jpg"},
-    { title: "Roundabout Ahead", image: "src/assets/images/roundabout.jpg"},
-    { title: "Slippery Road", image: "src/assets/images/slipperyroad.jpg"},
-    { title: "Speed Limit 50", image: "src/assets/images/speedlimit.png"},
-    { title: "No U-Turn", image: "src/assets/images/nouturn.jpg"},
-    { title: "Men At Work", image: "src/assets/images/work.png"},
+    { title: "Pedestrian Crossing", image: pedistraincrossing},
+    { title: "Roundabout Ahead", image: roundabout},
+    { title: "Slippery Road", image: slipperyroad},
+    { title: "Speed Limit 50", image: speedlimit},
+    { title: "No U-Turn", image: nouturn},
+    { title: "Men At Work", image: work},
   ];
   console.log(roadSigns);
   if (showSplash) {
@@ -70,7 +80,7 @@ const Home: React.FC = () => {
 
         {/* Video */}
         <motion.video
-          src="src/assets/images/animationcar.webm"
+          src={animationcar}
           autoPlay
           muted
           loop
@@ -134,21 +144,21 @@ const Home: React.FC = () => {
         >
           <SwiperSlide>
             <img
-              src="src/assets/images/collage.jpg"
+              src={collage}
               alt="Driving Lesson 1"
               className="w-full h-[300px] object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="src/assets/images/carcollage.jpg"
+              src={carcollege}
               alt="Driving Lesson 2"
               className="w-full h-[300px] object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="src/assets/images/drive.png"
+              src={drive}
               alt="Driving Lesson 1"
               className="w-full h-[300px] object-cover"
             />
@@ -308,6 +318,56 @@ const Home: React.FC = () => {
           ></iframe>
         </div>
       </section>
+
+      {/* Required Document */}
+       <div className="container mx-auto p-4">
+    <div className="bg-blue-50 shadow-md p-6 mb-10">
+    <h2 className="text-2xl font-bold text-[#001730] mb-4">Requirement for Driving Licence</h2>
+
+  {/* Age Proof */}
+  <div className="mb-4">
+    <h3 className="text-lg font-semibold text-[#1f3044]">Age Proof</h3>
+    <ul className="list-disc list-inside text-[#1f3044] ml-4">
+      <li>Pan Card</li>
+      <li>School Leaving Certificate</li>
+      <li>Birth Certificate</li>
+      <li>Passport</li>
+      <li>L.I.C. Policy <span className="text-sm text-gray-600">(any one)</span></li>
+    </ul>
+  </div>
+
+  {/* Address Proof */}
+  <div className="mb-4">
+    <h3 className="text-lg font-semibold text-[#1f3044]">Address Proof</h3>
+    <ul className="list-disc list-inside text-[#1f3044] ml-4">
+      <li>Aadhar Card</li>
+      <li>Passport</li>
+      <li>Election Voting Card along with Ration Card</li>
+      <li>Latest Electricity Bill <span className="text-sm text-gray-600">(any one)</span></li>
+    </ul>
+  </div>
+
+  {/* Photos */}
+  <div className="mb-4">
+    <h3 className="text-lg font-semibold text-[#1f3044]">Photos</h3>
+    <p className="text-[#1f3044] ml-4">3 copies of passport size photos</p>
+  </div>
+
+  {/* Age Limit */}
+  <div className="mb-4">
+    <h3 className="text-lg font-semibold text-[#1f3044]">Age Limit for Licence</h3>
+    <ul className="list-disc list-inside text-[#1f3044] ml-4">
+      <li>For Light Motor Vehicle (<strong>'Non Transport'</strong>): Above 18 years</li>
+      <li>For Light Motor Vehicle (<strong>'Transport'</strong>): Above 20 years & minimum qualification 8<sup>th</sup> pass</li>
+    </ul>
+  </div>
+
+  {/* Note */}
+  <p className="text-red-600 font-medium mt-4">
+    * All the above documents are required in original and Xerox.
+  </p>
+</div>
+</div>
 
       {/* Road Safety Signage Section */}
       <div className="w-full bg-gray-200 py-10 mt-10 mb-20">

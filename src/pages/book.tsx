@@ -24,7 +24,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ isOpen, onClose }) => {
     console.log("Form Submitted", formData);
 
     try {
-      const response = await fetch("https://formsubmit.co/ceae66780c6b6f7373a7bdb345b4f241", {
+      const response = await fetch("https://formsubmit.co/8751142b0790f48346fd921c78e6b645", {
         method: "POST",
         body: JSON.stringify(formData),
         headers: { "Content-Type": "application/json" },

@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import drive5 from "../assets/images/drive5.jpg";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -58,27 +59,27 @@ const Roadmap: React.FC = () => {
     {
       title: "Step 1: Apply for a Learner's Permit",
       description: "Submit the required documents and fees to get your learner's permit.",
-      image: "src/assets/images/drive5.jpg",
+      image: {drive5},
     },
     {
       title: "Step 2: Complete Driver Training",
       description: "Enroll in a certified driving school and complete your training hours.",
-      image: "src/assets/images/drive5.jpg",
+      image: {drive5},
     },
     {
       title: "Step 3: Schedule a Driving Test",
       description: "Book your driving test appointment with the local transport authority.",
-      image: "src/assets/images/drive5.jpg",
+      image: {drive5},
     },
     {
       title: "Step 4: Pass the Driving Test",
       description: "Demonstrate your driving skills to get approval for your license.",
-      image: "src/assets/images/drive5.jpg",
+      image: {drive5},
     },
     {
       title: "Step 5: Receive Your Driving License",
       description: "Once you pass, your license will be issued. Drive responsibly!",
-      image: "src/assets/images/drive5.jpg",
+      image: {drive5},
     },
   ];
 
@@ -168,7 +169,7 @@ const Roadmap: React.FC = () => {
             <SwiperSlide key={index} className="p-4">
               <div className="bg-white rounded-xl shadow-md flex flex-col items-center text-center p-6">
                 <img
-                  src={step.image}
+                  src={step.image.drive5}
                   alt={step.title}
                   className="w-24 h-24 mb-4"
                 />

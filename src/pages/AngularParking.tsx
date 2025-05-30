@@ -6,7 +6,7 @@ import {
   FaExclamationTriangle,
   FaLightbulb,
 } from "react-icons/fa";
-
+import angular from  "../assets/images/angular.jpg";
 const AngularParking: React.FC = () => {
   const navigate = useNavigate();
 
@@ -27,7 +27,7 @@ const AngularParking: React.FC = () => {
         {/* Image */}
         <div className="rounded-xl overflow-hidden shadow-md mb-8">
           <img
-            src="src/assets/images/angular.jpg"
+            src={angular}
             alt="Angular Parking Overview"
             className="w-full object-cover"
           />

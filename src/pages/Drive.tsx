@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import betterdriving from "../assets/images/better-driving.jpg";
 const Drive: React.FC = () => {
   const navigate = useNavigate();
 
@@ -44,7 +44,7 @@ const Drive: React.FC = () => {
         {/* Image */}
         <div className="flex justify-center mb-8">
           <img
-            src="src/assets/images/better-driving.jpg"
+            src={betterdriving}
             alt="Better Driving Tips"
             className="rounded-2xl shadow-lg w-full max-h-96 object-cover"
           />

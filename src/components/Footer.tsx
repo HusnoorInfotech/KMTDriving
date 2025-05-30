@@ -44,7 +44,7 @@ export default function Footer() {
         </div>
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
           <p>&copy; 2025 Kandivali Motor Training School. All rights reserved.</p><br></br>
-          <p>Design and Develop by <b>Husnoor Infotech</b></p>
+          <p>Design and Develop by <b><a href='https://www.husnoorinfotech.in'>Husnoor Infotech</a></b></p>
         </div>
       </div>
     </footer>

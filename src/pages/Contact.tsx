@@ -18,7 +18,7 @@ export default function Contact() {
     setSubmissionStatus(""); // Reset previous status
 
     try {
-      const response = await fetch("https://formsubmit.co/ceae66780c6b6f7373a7bdb345b4f241", {
+      const response = await fetch("https://formsubmit.co/8751142b0790f48346fd921c78e6b645", {
         method: "POST",
         body: JSON.stringify({ ...form }),
         headers: {
@@ -49,7 +49,7 @@ export default function Contact() {
             </div>
             <div className="flex items-center">
               <Mail className="h-6 w-6 text-blue-600 mr-4" />
-              <span className="text-[#001730]">kandivalimotor@gmail.com</span>
+              <span className="text-[#001730]">kandivalidrivingschool@gmail.com</span>
             </div>
             <div className="flex items-center">
               <MapPin className="h-12 w-12 text-blue-600 mr-6" />

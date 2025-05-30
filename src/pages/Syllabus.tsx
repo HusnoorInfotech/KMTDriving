@@ -2,6 +2,18 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import parallelparking from "../assets/images/parallelparking.jpg";
+import perpendicularparking from "../assets/images/perpendicularparking.png";
+import angular from "../assets/images/angular.jpg";
+import drive1 from "../assets/images/drive1.png";
+import drive2 from "../assets/images/drive2.jpg";
+import drive5 from "../assets/images/drive5.jpg";
+import rightcurve from "../assets/images/rightcurve.jpg";
+import pedistraincrossing from "../assets/images/pedistraincrossing.jpg";
+import leftcurve from "../assets/images/leftcurve.jpg";
+import crossroad from "../assets/images/crossroad.jpg"; 
+import speedlimit from "../assets/images/speedlimit.png";
+import roadnarrow from "../assets/images/roadnarrow.png"; 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -16,79 +28,79 @@ const Syllabus: React.FC = () => {
       description:
         "If you get sweaty palms just thinking about parallel parking, trust us, you are not the only one. Master parallel parking easily.",
       link: "/ParallelParking",
-      image: "src/assets/images/parallelparking.jpg",
+      image: parallelparking,
     },
     {
       title: "Everything You Need To Know About Perpendicular Parking",
       description:
         "If you get sweaty palms just thinking about parallel parking, trust us, you are not the only one. Master parallel parking easily.",
       link: "/PerpendicularParking",
-      image: "src/assets/images/perpendicularparking.png",
+      image: perpendicularparking,
     },
     {
       title: "Everything You Need To Know About Angular Parking",
       description:
         "If you get sweaty palms just thinking about parallel parking, trust us, you are not the only one. Master parallel parking easily.",
       link: "/AngularParking",
-      image: "src/assets/images/angular.jpg",
+      image: angular,
     },
     {
       title: "10 Practices That Make You a Safer Driver",
       description:
         "Although the 2020 lockdown resulted in a 49.47% fall in the number of lives lost in road accidents, safe driving habits matter.",
       link: "/SaferDrivingPractices",
-      image: "src/assets/images/drive1.png",
+      image: drive1,
     },
     {
       title: "5 Car Driving Tips That Make You a Better Driver",
       description:
         "There’s no age for learning, and the scope of learning is infinite. When it comes to driving, follow these 5 expert tips.",
       link: "/Drive",
-      image: "src/assets/images/drive2.jpg",
+      image: drive2,
     },
     {
       title: "Top 10 Road Safety Tips You Should Know",
       description:
         "Safety must come first on your list when driving, be it for yourself and the passengers, pedestrians, or other drivers.",
       link: "/RoadSafetyTips",
-      image: "src/assets/images/drive5.jpg",
+      image: drive5,
     },
   ];
 
   const roadSigns = [
-    { title: "Right Curve", image: "src/assets/images/rightcurve.jpg" },
-    { title: "Left Curve", image: "src/assets/images/leftcurve.jpg" },
-    { title: "Pedistrain Crossing", image: "src/assets/images/pedistraincrossing.jpg" },
-    { title: "Crossroads Road", image: "src/assets/images/crossroad.jpg" },
-    { title: "Speed Limit", image: "src/assets/images/speedlimit.png" },
-    { title: "Road Narrow", image: "src/assets/images/roadnarrow.png" },
+    { title: "Right Curve", image: rightcurve},
+    { title: "Left Curve", image: leftcurve},
+    { title: "Pedistrain Crossing", image: pedistraincrossing },
+    { title: "Crossroads Road", image: crossroad },
+    { title: "Speed Limit", image:speedlimit },
+    { title: "Road Narrow", image: roadnarrow },
   ];
 
   const licenseProcess = [
     {
       title: "Step 1: Apply for a Learner's Permit",
       description: "Submit the required documents and fees to get your learner's permit.",
-      image: "src/assets/images/drive5.jpg",
+      image: drive5,
     },
     {
       title: "Step 2: Complete Driver Training",
       description: "Enroll in a certified driving school and complete your training hours.",
-      image: "src/assets/images/drive5.jpg",
+      image: drive5,
     },
     {
       title: "Step 3: Schedule a Driving Test",
       description: "Book your driving test appointment with the local transport authority.",
-      image: "src/assets/images/drive5.jpg",
+      image:drive5,
     },
     {
       title: "Step 4: Pass the Driving Test",
       description: "Demonstrate your driving skills to get approval for your license.",
-      image: "src/assets/images/drive5.jpg",
+      image:drive5,
     },
     {
       title: "Step 5: Receive Your Driving License",
       description: "Once you pass, your license will be issued. Drive responsibly!",
-      image: "src/assets/images/drive5.jpg",
+      image:drive5,
     },
   ];
 

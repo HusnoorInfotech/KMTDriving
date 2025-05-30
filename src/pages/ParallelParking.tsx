@@ -1,6 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import parallel1 from "../assets/images/parallel1.png";
+import parallel34 from "../assets/images/parallel34.png";
+import parallel56 from "../assets/images/parallel56.png";
 const ParallelParking: React.FC = () => {
   const navigate = useNavigate();
 
@@ -12,7 +14,7 @@ const ParallelParking: React.FC = () => {
         "Ensure it's a legal parking zone.",
         "Check your mirrors for pedestrians, cyclists, and vehicles.",
       ],
-      img: "src/assets/images/parallel1.png",
+      img: parallel1,
     },
     {
       step: "Step 2: Align Your Car",
@@ -21,7 +23,7 @@ const ParallelParking: React.FC = () => {
         "Maintain about 2-3 feet of distance.",
         "Check surroundings before proceeding.",
       ],
-      img: "src/assets/images/parallel1.png",
+      img: parallel1,
     },
     {
       step: "Step 3: Start Reversing",
@@ -30,7 +32,7 @@ const ParallelParking: React.FC = () => {
         "Reverse until your back right wheel aligns with the other car’s rear bumper.",
         "Keep checking mirrors and blind spots.",
       ],
-      img: "src/assets/images/parallel34.png",
+      img: parallel34,
     },
     {
       step: "Step 4: Straighten the Wheels",
@@ -39,7 +41,7 @@ const ParallelParking: React.FC = () => {
         "Continue reversing straight into the space.",
         "Avoid hitting the curb or the rear car.",
       ],
-      img: "src/assets/images/parallel34.png",
+      img:parallel34,
     },
     {
       step: "Step 5: Final Adjustment",
@@ -48,7 +50,7 @@ const ParallelParking: React.FC = () => {
         "Move forward/back to center your car evenly.",
         "Ensure the vehicle is straight and centered.",
       ],
-      img: "src/assets/images/parallel56.png",
+      img:parallel56,
     },
     {
       step: "Step 6: Center Your Car",
@@ -57,7 +59,7 @@ const ParallelParking: React.FC = () => {
         "Engage the parking brake.",
         "Exit only when safe.",
       ],
-      img: "src/assets/images/parallel56.png",
+      img:parallel56,
     },
   ];
 

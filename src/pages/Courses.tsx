@@ -4,6 +4,8 @@ import { useState } from "react";
 // import { motion } from "framer-motion"; // Import motion from framer-motion
 // import { useRef } from "react";
 import BookingForm from "./book";
+import drive1 from "../assets/images/drive1.png";
+import drive2 from "../assets/images/drive2.jpg";
 import RecommendationModal from "../pages/RecommendationModal";
 
 // Cars details
@@ -15,7 +17,7 @@ interface Course {
   simulator?: number;
   theory: number;
   recommended?: boolean;
-  image: string;
+  image:any;
   category: string;
   duration: string;
   fee: string;
@@ -30,7 +32,7 @@ const courses: Course[] = [
     simulator: 5,
     theory: 4,
     recommended: true,
-    image: "src/assets/images/drive1.png",
+    image: {drive1},
     category: "Beginner",
     duration: "20 Days",
     fee: "₹4,500",
@@ -43,7 +45,7 @@ const courses: Course[] = [
     simulator: 2,
     theory: 2,
     recommended: true,
-    image: "src/assets/images/drive2.jpg",
+    image: {drive2},
     category: "Advanced",
     duration: "10 Days",
     fee: "₹2,000",
@@ -55,7 +57,7 @@ const courses: Course[] = [
       "Prepares you for the transport license test by covering heavy vehicle handling, route planning, and passenger safety.",
     practical: 10,
     theory: 5,
-    image: "src/assets/images/drive1.png",
+    image: {drive1},
     category: "Transport",
     duration: "10-15 Days",
     fee: "₹5,500 - ₹10,000",

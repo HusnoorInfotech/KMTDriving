@@ -1,6 +1,7 @@
 import  { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Award } from "lucide-react";
+import car4 from "../assets/images/car4.jpg";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const counterVariants = {
@@ -104,7 +105,7 @@ const AboutUs = () => {
       {/* Image Section */}
       <div className="w-full md:w-1/2">
         <img 
-          src="src/assets/images/car4.jpg" 
+          src={car4} 
           alt="Professional" 
           className="rounded-lg shadow-lg w-full h-auto"
         />
@@ -135,7 +136,7 @@ const AboutUs = () => {
       {/* Image Section */}
       <div className="w-full md:w-1/2">
         <img 
-          src="src/assets/images/car4.jpg" 
+          src={car4} 
           alt="Professional" 
           className="rounded-lg shadow-lg w-full h-auto"
         />
@@ -154,7 +155,7 @@ const AboutUs = () => {
     </div>
     <div className="container mx-auto p-4">
     <div className="bg-blue-50 shadow-md p-6 mb-10">
-  <h2 className="text-2xl font-bold text-[#001730] mb-4">Requirement for Driving Licence</h2>
+    <h2 className="text-2xl font-bold text-[#001730] mb-4">Requirement for Driving Licence</h2>
 
   {/* Age Proof */}
   <div className="mb-4">
