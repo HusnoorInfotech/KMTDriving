@@ -450,13 +450,16 @@ const Home: React.FC = () => {
     "
   >
     {/* WhatsApp Button */}
-    <Link to="https://wa.me/7021340259" className="sm:mr-0 xs:mr-0">
+    
       <button
-        className="bg-[#25d366] text-white px-5 py-3 rounded-lg shadow-xl hover:bg-[#075e54] transition duration-300 flex items-center backdrop-blur-md bg-opacity-85 hover:scale-[1.05] w-full-0 sm:w-auto"
+        className="bg-[#25d366] text-white px-5 py-3 rounded-lg shadow-xl hover:bg-[#075e54] transition duration-300 flex items-start backdrop-blur-md bg-opacity-85 hover:scale-[1.05]"
       >
+        <Link to="https://wa.me/7021340259">
+        
         <MessageCircle />
+        </Link>
       </button>
-    </Link>
+    
 
     {/* Reviews and Ratings Button */}
     <button
@@ -469,7 +472,7 @@ const Home: React.FC = () => {
   </div>
 </div>
 
-        </div>
+</div>
   );
 };
 
