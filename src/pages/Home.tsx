@@ -426,6 +426,18 @@ const Home: React.FC = () => {
         {/* <span className="text-lg font-semibold">Reviews & Ratings</span> */}
       {/* </button> */}
     {/* </div> */}
+
+  {/* Container for WhatsApp and Reviews buttons */}
+  <div
+    className="
+      fixed bottom-6 left-6 right-6 flex flex-col space-y-6 
+      sm:flex-row sm:space-x-4 sm:space-y-0 
+      sm:bottom-6 sm:left-6 sm:right-auto 
+      sm:justify-center 
+      xs:bottom-6 xs:left-1/2 xs:right-auto xs:transform xs:-translate-x-1/2
+      z-50
+    "
+  >
     <div>
   {/* Register Interest Button */}
   <button
@@ -437,30 +449,17 @@ const Home: React.FC = () => {
 
   {/* BookingForm Modal */}
   <BookingForm isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
-
-  {/* Container for WhatsApp and Reviews buttons */}
-  <div
-    className="
-      fixed bottom-6 left-6 right-6 flex flex-col space-y-6 
-      sm:flex-row sm:space-x-4 sm:space-y-0 
-      sm:bottom-6 sm:left-6 sm:right-auto 
-      sm:justify-start 
-      xs:bottom-6 xs:left-1/2 xs:right-auto xs:transform xs:-translate-x-1/2
-      z-50
-    "
-  >
     {/* WhatsApp Button */}
-    <Link to="https://wa.me/7021340259" className="sm:mr-0 xs:mr-0">
-      <button
-        className="bg-[#25d366] text-white px-5 py-3 rounded-lg shadow-xl hover:bg-[#075e54] transition duration-300 flex items-center backdrop-blur-md bg-opacity-85 hover:scale-[1.05] w-full-0 sm:w-auto"
-      >
+    
+      <button  className="bg-[#25d366] text-white px-5 py-3 rounded-lg shadow-xl hover:bg-[#075e54] transition duration-300 flex items-center backdrop-blur-md bg-opacity-85 hover:scale-[1.05] w-[60px] sm:w-auto">
+    <Link to="https://wa.me/7021340259" className="w-auto h-auto flex items-center justify-center">
         <MessageCircle />
-      </button>
     </Link>
+      </button>
 
     {/* Reviews and Ratings Button */}
     <button
-      className="bg-[#4A5D85] text-white px-5 py-3 rounded-lg shadow-xl hover:bg-[#3F5273] transition duration-300 flex items-center backdrop-blur-md bg-opacity-85 hover:scale-[1.05] w-full-0 sm:w-auto"
+      className="bg-[#4A5D85] text-white px-5 py-3 rounded-lg shadow-xl hover:bg-[#3F5273] transition duration-300 flex items-center backdrop-blur-md bg-opacity-85 hover:scale-[1.05] w-full sm:w-auto"
       onClick={() => navigate("/reviews")}
     >
       <Star className="mr-2 h-6 w-6" />
