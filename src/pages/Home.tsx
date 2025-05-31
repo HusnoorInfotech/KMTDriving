@@ -450,12 +450,13 @@ const Home: React.FC = () => {
   {/* BookingForm Modal */}
   <BookingForm isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
     {/* WhatsApp Button */}
-    
-      <button  className="bg-[#25d366] text-white px-5 py-3 rounded-lg shadow-xl hover:bg-[#075e54] transition duration-300 flex items-center backdrop-blur-md bg-opacity-85 hover:scale-[1.05] w-[60px] sm:w-auto">
-    <Link to="https://wa.me/7021340259" className="w-auto h-auto flex items-center justify-center">
+    <Link to="https://wa.me/7021340259" className="sm:mr-0 xs:mr-0">
+      <button
+        className="bg-[#25d366] text-white px-5 py-3 rounded-lg shadow-xl hover:bg-[#075e54] transition duration-300 flex items-center backdrop-blur-md bg-opacity-85 hover:scale-[1.05] w-full-0 sm:w-auto"
+      >
         <MessageCircle />
-    </Link>
       </button>
+    </Link>
 
     {/* Reviews and Ratings Button */}
     <button
@@ -468,7 +469,7 @@ const Home: React.FC = () => {
   </div>
 </div>
 
-        </div>
+</div>
   );
 };
 
